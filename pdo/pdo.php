@@ -36,6 +36,12 @@
 		   images VARCHAR(400) NOT NULL,
 		   PRIMARY KEY ( id )
 		);
+
+		create table zhanghu(
+			id int unsigned not null auto_increment primary key,
+			name varchar(32),
+			money int
+		)engine=innodb default charset=utf8;
 		*/
 
 		//二：设置字符集
