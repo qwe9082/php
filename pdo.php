@@ -1,6 +1,7 @@
 <?php
 	/*使用pdo连接数据库的一个例子，以及复习mysql命令*/
 	try{
+		//设置异常类型   //默认静至模式 PDO::ERRMODE_SILENT   //警告模式 PDO::ERRMODE_WARNING   //异常处理模式PDO::ERRMODE_EXCEPTION
 		$opt = array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION);
 		//一：实例化pdo类
 		$pdo = new PDO('mysql:host=localhost;dbname=mysql','root','123456',$opt);
