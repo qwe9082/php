@@ -39,6 +39,10 @@
 
 		echo $statement->rowCount();
 
+		//执行DQL返回的结果
+		$statement->fetch();//从结果集中获取下一行 
+		$statement->fetchAll();//返回一个包含结果集中所有行的数组 
+
 	}catch(PDOException $e){
 		echo $e->getMessage();
 	}
